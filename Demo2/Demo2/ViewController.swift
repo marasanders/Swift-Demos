@@ -9,10 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
+  
+    // define created table as having 10  rows
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
           return 10
     }
+    // set the text cells with row  hash number and subtitle  hash number
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell: UITableViewCell = UITableViewCell (style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyTestCell")
     
